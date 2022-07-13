@@ -5,41 +5,53 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Resume</title>
 </head>
 <body>
 <!--Main-->
-<div>
+<div class="main">
     <!--MainContent-->
-    <div>
+    <div class="main-content">
         <!--AboutMe-->
-        <div>
-            <h2>Front-End Developer</h2>
-
-            <h1>Andrii Drobotyuk</h1>
-            <p>I'm a Ukrainian based web designer & front‑end developer focused on crafting clean & user‑friendly
+        <div class="about-me">
+            <h2 class="about-me-position">Front-End Developer</h2>
+            <h1 class="about-me-name">Andrii Drobotyuk</h1>
+            <p class="about-me-description">I'm a Ukrainian based web designer & front‑end developer focused on
+                crafting clean & user‑friendly
                 experiences, I am passionate about building excellent software that improves the lives of those around
                 me.</p>
         </div>
         <!--MyProjects-->
-        <div>
-            <h3>Projects</h3>
-            <ol>
-                <li>
-                    <a href="https://hellenglish.goit.global/">https://hellenglish.goit.global/</a>..........[ HTML5,
-                    CSS3 ]
+        <div class="my-project">
+            <h3 class="title">Projects</h3>
+            <ol class="project-list">
+                <li class="project-item">
+                    <span class="project">
+                        <a href="https://hellenglish.goit.global/" class="project-link">
+                            https://hellenglish.goit.global/</a>
+                        ..........<b>[</b>HTML5, CSS3 <b>]</b></span>
                 </li>
-                <li><a href="https://cryptohub.goit.global/">https://cryptohub.goit.global/</a>............[
-                    JavaScript ]
+                <li class="project-item">
+                    <span class="project">
+                        <a href="https://cryptohub.goit.global/" class="project-link">
+                        https://cryptohub.goit.global/</a>
+                        ............<b>[</b> JavaScript <b>]</b></span>
                 </li>
-                <li><a href="https://kidslike.goit.global/">https://kidslike.goit.global/</a>...............[ React.js,
-                    Node.js ]
+                <li class="project-item">
+                    <span class="project">
+                        <a href="https://kidslike.goit.global/" class="project-link">
+                            https://kidslike.goit.global/</a>
+                        ...............<b>[</b> React.js, Node.js <b>]</b></span>
                 </li>
             </ol>
         </div>
         <!--WorkExperience-->
-        <div>
-            <h3>Work Experience</h3>
+        <div class="work">
+            <h3 class="title">Work Experience</h3>
             <!--Company1-->
             <div>
                 <h4>Front-End Developer Freelance</h4>
@@ -77,45 +89,45 @@
             </div>
         </div>
         <!--Education-->
-        <div>
-            <h3>Education</h3>
-            <div>
-                <h4>Bogdan Khmelnytsly Melitopol State Pedagogical University</h4>
-                <h4>Master of Education Sciences, Geography</h4>
-                <p>September 1999 - June 2005 | Ukraine</p>
-            </div>
+        <div class="education">
+            <h3 class="title">Education</h3>
+            <h4>Bogdan Khmelnytsly Melitopol State Pedagogical University</h4>
+            <h4>Master of Education Sciences, Geography</h4>
+            <p>September 1999 - June 2005 | Ukraine</p>
         </div>
     </div>
     <!--Sidebar-->
-    <aside>
-        <img src="img/myPhoto.jpg" alt="mainPhoto">
+    <aside class="sidebar">
+        <img src="img/myPhoto.jpg" alt="mainPhoto" class="main-photo">
         <!--Contacts-->
-        <div>
-            <h3>Contacts</h3>
-            <p>C: <a href="tel:+380936888885">+38 093 688 88 85</a></p>
-            <p>E: <a href="mailto:adrobotyuk@gmail.com">adrobotyuk@gmail.com</a></p>
+        <div class="contacts">
+            <h3 class="sidebar-title">Contacts</h3>
+            <p><span class="contact-type">C:</span>
+                <a href="tel:+380936888885" class="contact-link">+38-093-688-88-85</a></p>
+            <p><span class="contact-type">E:</span>
+                <a href="mailto:adrobotyuk@gmail.com" class="contact-link">adrobotyuk@gmail.com</a></p>
         </div>
         <!--TechSkills-->
-        <div>
-            <h3>Tech Skills</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>GIT</li>
-                <li>WebPack</li>
-                <li>JavaScript</li>
-                <li>React.js</li>
-                <li>Node.js</li>
+        <div class="tech-skills">
+            <h3 class="sidebar-title">Tech Skills</h3>
+            <ul class="tech-skills-list">
+                <li class="tech-skills-item"><span class="tech-skills-text">HTML5</span></li>
+                <li class="tech-skills-item"><span class="tech-skills-text">CSS3</span></li>
+                <li class="tech-skills-item"><span class="tech-skills-text">GIT</span></li>
+                <li class="tech-skills-item"><span class="tech-skills-text">WebPack</span></li>
+                <li class="tech-skills-item"><span class="tech-skills-text">JavaScript</span></li>
+                <li class="tech-skills-item"><span class="tech-skills-text">React.js</span></li>
+                <li class="tech-skills-item"><span class="tech-skills-text">Node.js</span></li>
             </ul>
         </div>
         <!--SoftSkills-->
-        <div>
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Scrum</li>
-                <li>Agile</li>
-                <li>GTD</li>
-                <li>Teamwork</li>
+        <div class="soft-skills">
+            <h3 class="sidebar-title">Soft Skills</h3>
+            <ul class="soft-skills-list">
+                <li class="soft-skills-item"><span class="soft-skills-text">Scrum</span></li>
+                <li class="soft-skills-item"><span class="soft-skills-text">Agile</span></li>
+                <li class="soft-skills-item"><span class="soft-skills-text">GTD</span></li>
+                <li class="soft-skills-item"><span class="soft-skills-text">Teamwork</span></li>
             </ul>
         </div>
     </aside>
